@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cts.cosmos.com/order.schema.json",
+  "title": "Order",
+  "description": "An Order model",
+  "type": "object",
+  "javaType": "com.cts.cosmos.orderservice.model.json.Order",
+  "properties": {
+    "orderId": {
+      "description": "The unique identifier for a order",
+      "type": "string"
+    },
+    "tempOrderId": {
+      "description": "A temporary unique identifier for a order",
+      "type": "string"
+    },
+    "orderCost": {
+      "description": "The price of the order",
+      "type": "string"
+    },
+    "orderDate": {
+      "description": "The date of the order",
+      "type": "string"
+    },
+    "isOrderDuplicate": {
+      "description": "The duplicate order indicator",
+      "type": "boolean"
+    },
+    "isOrderSuccessfullyPlaced": {
+      "description": "The order placed indicator",
+      "type": "boolean"
+    },
+    "addressOfCustomer": {
+      "required": false,
+      "$ref": "./Address.json#/definitions/address"
+    },
+    "addressOfSeller": {
+      "required": false,
+      "$ref": "./Address.json#/definitions/address"
+    }
+  },
+  "required": [ "orderId"]
+}

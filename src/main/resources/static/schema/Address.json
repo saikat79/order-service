@@ -1,0 +1,34 @@
+{
+  "definitions": {
+    "address": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "addressRow1": {
+          "description": "The address row1",
+          "type": "string"
+        },
+        "addressRow2": {
+          "description": "The address row2",
+          "type": "string"
+        },
+        "addressRow3": {
+          "description": "The address row3",
+          "type": "string"
+        },
+        "city": {
+          "description": "The city of Address",
+          "type": "string"
+        },
+        "state": {
+          "description": "The state of Address",
+          "type": "string"
+        },
+        "postalCode": {
+          "description": "The postal code of Address",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
